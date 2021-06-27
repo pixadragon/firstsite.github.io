@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My First Website - Favorite Countries to Visit</title>
+	
+	<style>
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: #801f5c;
+		   width: 120%;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 30px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav a.active {
+		  background-color: #f037ac;
+		  color: white;
+		}
+
+		#myImg {
+		  border-radius: 5px;
+		  cursor: pointer;
+		  transition: 0.3s;
+		}
+
+		#myImg:hover {
+		  opacity: 0.7;
+		}
+
+		.modal {
+		  display: none;
+		  /* Hidden by default */
+		  position: fixed;
+		  /* Stay in place */
+		  z-index: 1;
+		  /* Sit on top */
+		  padding-top: 100px;
+		  /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  /* Full width */
+		  height: 100%;
+		  /* Full height */
+		  overflow: auto;
+		  /* Enable scroll if needed */
+		  background-color: rgb(0, 0, 0);
+		  /* Fallback color */
+		  background-color: rgba(0, 0, 0, 0.9);
+		  /* Black w/ opacity */
+		}
+
+		.modal-content {
+		  margin: auto;
+		  display: block;
+		  width: 40%;
+		  max-width: 600px;
+		}
+
+		#caption {
+		  margin: auto;
+		  display: block;
+		  width: 80%;
+		  max-width: 700px;
+		  text-align: center;
+		  color: #ccc;
+		  padding: 10px 0;
+		  height: 150px;
+		  font-size: 30px;
+		}
+
+		.modal-content,
+		#caption {
+		  animation-name: zoom;
+		  animation-duration: 0.6s;
+		}
+
+		@keyframes zoom {
+		  from {
+			transform: scale(0)
+		  }
+		  to {
+			transform: scale(1)
+		  }
+		}
+
+		.close {
+		  position: absolute;
+		  top: 15px;
+		  right: 35px;
+		  color: #f1f1f1;
+		  font-size: 40px;
+		  font-weight: bold;
+		  transition: 0.3s;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #bbb;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		@media only screen and (max-width: 700px) {
+		  .modal-content {
+			width: 100%;
+		  }
+		}		
+	</style>
+		
+</head>
+<body style = "background-color:#ffd4ee; width:120%; margin:0;"  VLINK= "#f768e9" ALINK="#ca0c7e " >
+
+	<div class="topnav">
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA.html">Home</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(1).html">Favorite Games</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(2).html">Favorite Movies</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(3).html">Favorite TV Shows</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(4).html">Favorite Books</a>
+	  <a class="active" href="#favorite countries to visit">Favorite Countries to Visit</a>
+	</div>
+	
+	<i><h1 style="text-align:center; color:	#f768e9; font-family:garamond; font-size:70px;">Favorite Countries to Visit</h1></i>
+	<hr style="height:1px; width:120%;   color:	#ca0c7e; background-color:	#ca0c7e">
+	<br>
+	<b><blockquote><ol style="font-family:garamond; font-size:20px; color:#c2bb88;">
+		<dl>
+			<li  style="color:#39386e;"><dt><img class="myImages" id="myImg" style='border:4px solid #fdf9fa' src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/188px-Flag_of_the_United_States.svg.png" alt="Flag of the United States of America" width="180" height="83"></dt>
+			<dd><p>The United States of America (U.S.A. or USA), commonly known as the United States (U.S. or US) or America, is a country primarily located in North America. It consists of 50 states, a federal district, five major unincorporated territories, 326 Indian reservations, and some minor possessions. At 3.8 million square miles (9.8 million square kilometers), it is the world's third- or fourth-largest country by total area. With a population of more than 331 million people, it is the third most populous country in the world. The national capital is Washington, D.C., and the most populous city is New York City.
+				<p>Paleo-Indians migrated from Siberia to the North American mainland at least 12,000 years ago, and European colonization began in the 16th century. The United States emerged from the thirteen British colonies established along the East Coast. Disputes over taxation and political representation with Great Britain led to the American Revolutionary War (1775–1783), which established independence. In the late 18th century, the U.S. began vigorously expanding across North America, gradually acquiring new territories, frequently displacing Native Americans, and admitting new states; by 1848, the United States spanned the continent. Slavery was legal in the southern United States until the second half of the 19th century when the American Civil War led to its abolition. The Spanish–American War and World War I established the U.S. as a world power, a status confirmed by the outcome of World War II.
+				<p>During the Cold War, the United States fought the Korean War and the Vietnam War but avoided direct military conflict with the Soviet Union. The two superpowers competed in the Space Race, culminating in the 1969 spaceflight that first landed humans on the Moon. The Soviet Union's dissolution in 1991 ended the Cold War, leaving the United States as the world's sole superpower.
+				<p>The United States is a federal republic and a representative democracy with three separate branches of government, including a bicameral legislature. It is a founding member of the United Nations, World Bank, International Monetary Fund, Organization of American States, NATO, and other international organizations. It is a permanent member of the United Nations Security Council. Considered a melting pot of cultures and ethnicities, its population has been profoundly shaped by centuries of immigration. The U.S. ranks high in international measures of economic freedom, reduced levels of perceived corruption, quality of life, quality of higher education, and human rights. However, the country has received criticism concerning inequality related to race, wealth and income, the use of capital punishment, high incarceration rates, and lack of universal health care.
+				<p>The United States is a highly developed country, and continuously ranks high in measures of socioeconomic performance. It accounts for approximately a quarter of global GDP and is the world's largest economy by GDP at market exchange rates. By value, the United States is the world's largest importer and the second-largest exporter of goods. Although its population is only 4.2% of the world total, it holds 29.4% of the total wealth in the world, the largest share held by any country. Making up more than a third of global military spending, it is the foremost military power in the world and is a leading political, cultural, and scientific force internationally.
+			</dd>
+			</li>
+			
+			<li  style="color:#d62718;"><dt><img class="myImages" id="myImg" alt="Flag of Canada" style='border:4px solid #fdf9fa' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/188px-Flag_of_Canada_%28Pantone%29.svg.png" width="180" height="83"></dt>
+			<dd><p>Canada is a country in North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres (3.85 million square miles), making it the world's second-largest country by total area. Its southern and western border with the United States, stretching 8,891 kilometres (5,525 mi), is the world's longest bi-national land border. Canada's capital is Ottawa, and its three largest metropolitan areas are Toronto, Montreal, and Vancouver.
+				<p>Various Indigenous peoples have continuously inhabited what is now Canada for thousands of years. Beginning in the 16th century, British and French expeditions explored and later settled along the Atlantic coast. As a consequence of various armed conflicts, France ceded nearly all of its colonies in North America in 1763. In 1867, with the union of three British North American colonies through Confederation, Canada was formed as a federal dominion of four provinces. This began an accretion of provinces and territories and a process of increasing autonomy from the United Kingdom. This widening autonomy was highlighted by the Statute of Westminster 1931 and culminated in the Canada Act 1982, which severed the vestiges of legal dependence on the British Parliament.
+				<p>Canada is a parliamentary democracy and a constitutional monarchy in the Westminster tradition. The country's head of government is the prime minister—who holds office by virtue of their ability to command the confidence of the elected House of Commons—and is appointed by the governor general, representing the monarch, who serves as head of state. The country is a Commonwealth realm and is officially bilingual at the federal level. It ranks among the highest in international measurements of government transparency, civil liberties, quality of life, economic freedom, and education. It is one of the world's most ethnically diverse and multicultural nations, the product of large-scale immigration from many other countries. Canada's long relationship with the United States has had a significant impact on its economy and culture.
+				<p>A highly developed country, Canada has the seventeenth-highest nominal per-capita income globally and the sixteenth-highest ranking in the Human Development Index. Its advanced economy is the tenth-largest in the world, relying chiefly upon its abundant natural resources and well-developed international trade networks. Canada is part of several major international and intergovernmental institutions or groupings including the United Nations, NATO, the G7, the Group of Ten, the G20, the United States–Mexico–Canada Agreement, the Commonwealth of Nations, the Organisation internationale de la Francophonie, the Asia-Pacific Economic Cooperation forum, and the Organization of American States.
+			</dd>
+			</li>
+			
+			<li  style="color:#bd0029;"><dt><img class="myImages" id="myImg" alt="Flag of Japan" style='border:4px solid #fdf9fa' src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/188px-Flag_of_Japan.svg.png" width="170" height="83"></dt>
+			<dd><p>Japan (Japanese: 日本, Nippon [ɲippoꜜɴ]  or Nihon [ɲihoꜜɴ] ) is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. Part of the Ring of Fire, Japan spans an archipelago of 6852 islands covering 377,975 square kilometers (145,937 sq mi); the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.
+				<p>Japan is the eleventh-most populous country in the world, as well as one of the most densely populated and urbanized. About three-fourths of the country's terrain is mountainous, concentrating its population of 125.36 million on narrow coastal plains. Japan is divided into 47 administrative prefectures and eight traditional regions. The Greater Tokyo Area is the most populous metropolitan area in the world, with more than 37.4 million residents.
+				<p>Japan has been inhabited since the Upper Paleolithic period (30,000 BC), though the first mentions of the archipelago appear in Chinese chronicles from the 1st century AD. Between the 4th and 9th centuries, the kingdoms of Japan became unified under an emperor and his imperial court based in Heian-kyō. Beginning in the 12th century, political power was held by a series of military dictators (shōgun) and feudal lords (daimyō), and enforced by a class of warrior nobility (samurai). After a century-long period of civil war, the country was reunified in 1603 under the Tokugawa shogunate, which enacted an isolationist foreign policy. In 1854, a United States fleet forced Japan to open trade to the West, which led to the end of the shogunate and the restoration of imperial power in 1868. In the Meiji period, the Empire of Japan adopted a Western-styled constitution and pursued a program of industrialization and modernization. In 1937, Japan invaded China; in 1941, it entered World War II as an Axis power. After suffering defeat in the Pacific War and two atomic bombings, Japan surrendered in 1945 and came under a seven-year Allied occupation, during which it adopted a new constitution. Since 1947, Japan has maintained a unitary parliamentary constitutional monarchy with a bicameral legislature, the National Diet.
+				<p>Japan is a great power and a member of numerous international organizations, including the United Nations (since 1956), the OECD, and the Group of Seven. Although it has renounced its right to declare war, the country maintains Self-Defense Forces that are ranked as the world's fourth-most powerful military. After World War II, Japan experienced record economic growth, becoming the second-largest economy in the world by 1990. As of 2021, the country's economy is the third-largest by nominal GDP and the fourth-largest by PPP. A leader in the automotive and electronics industries, Japan has made significant contributions to science and technology. Ranked "very high" on the Human Development Index, Japan has the world's highest life expectancy, though it is experiencing a decline in population. The culture of Japan is well known around the world, including its art, cuisine, music, and popular culture, which encompasses prominent animation and video game industries.			
+			</dd>
+			</li>
+			
+			<li  style="color:#0045a1;"><dt><img class="myImages" id="myImg" alt="Flag of South Korea"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7c-Mdc3xjsdOGF4NUEp6ruvUdepsXE255_w&usqp=CAU" width="200" height="103"></dt>
+			<dd><p>South Korea, officially the Republic of Korea (ROK), is a country in East Asia, constituting the southern part of the Korean Peninsula, and sharing a land border with North Korea. About 25 million people, around half of the country's population of 51 million, live in the Seoul Capital Area.
+				<p>The Korean Peninsula was inhabited as early as the Lower Paleolithic period. Its first kingdom was noted in Chinese records in the early 7th century BCE. Following the unification of the Three Kingdoms of Korea into Silla and Balhae in the late 7th century, Korea was ruled by the Goryeo dynasty (918–1392) and the Joseon dynasty (1392–1897). The succeeding Korean Empire was annexed into the Empire of Japan in 1910. After World War II, Korea was divided into two zones; a northern zone occupied by the Soviet Union and a southern zone occupied by the United States. After negotiations on reunification failed, the latter became the Republic of Korea in August 1948 while the former became North Korea.
+				<p>In 1950, a North Korean invasion began the Korean War, which saw extensive U.S.-led U.N. intervention in support of the South, while the North received support from China and from the Soviet Union. After the war's end in 1953, the country's economy began to soar, recording the fastest rise in average GDP per capita in the world between 1980 and 1990. The June Struggle led to the end of authoritarian rule in 1987 and the country is now considered among the most advanced democracies in Asia, with the highest level of press freedom. However, corruption and political scandals remain serious problems; all four living former South Korean presidents have been sentenced to prison for various crimes ranging from abuse of authority to bribery and embezzlement; with two still currently serving their sentences.
+				<p>South Korea is a developed country and is ranked as the seventh-highest country on the Human Development Index in Asia. Its economy ranks as the world's tenth-largest by nominal GDP. Its citizens enjoy one of the world's fastest Internet connection speeds and the densest high-speed railway network. The country is the world's fifth-largest exporter and eighth-largest importer. South Korea was in 2017 the world's 7th largest emitter of carbon emissions and the 5th largest emitter per capita. Since the 21st century, South Korea has been renowned for its globally influential pop culture, particularly in music (K-pop), TV dramas and cinema, a phenomenon referred to as the Korean Wave. It is a member of the OECD's Development Assistance Committee, the G20, and the Paris Club.
+			</dd>
+			</li>
+			
+			<li  style="color:#39386e;"><dt><img class="myImages" id="myImg" alt="Flag of The United Kingdom" style='border:4px solid #fdf9fa' src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/188px-Flag_of_the_United_Kingdom.svg.png" width="180" height="83"></dt>
+			<dd><p>The United Kingdom of Great Britain and Northern Ireland, commonly known as the United Kingdom (UK) or Britain, is a sovereign country in north-western Europe, off the north-­western coast of the European mainland. The United Kingdom includes the island of Great Britain, the north-­eastern part of the island of Ireland, and many smaller islands within the British Isles. Northern Ireland shares a land border with the Republic of Ireland. Otherwise, the United Kingdom is surrounded by the Atlantic Ocean, with the North Sea to the east, the English Channel to the south and the Celtic Sea to the south-west, giving it the 12th-longest coastline in the world. The Irish Sea separates Great Britain and Ireland. The total area of the United Kingdom is 94,000 square miles (240,000 km2).
+				<p>The United Kingdom is a unitary parliamentary democracy and constitutional monarchy. The monarch, Queen Elizabeth II, has reigned since 1952. The capital is London, a global city and financial centre with an urban area population of 10.3 million. The United Kingdom consists of four countries: England, Scotland, Wales and Northern Ireland. Their capitals are London, Edinburgh, Cardiff and Belfast, respectively. Other than England, the constituent countries have their own devolved governments, each with varying powers.
+				<p>The union between the Kingdom of England (which included Wales) and the Kingdom of Scotland in 1707 to form the Kingdom of Great Britain, followed by their union in 1801 with the Kingdom of Ireland, created the United Kingdom of Great Britain and Ireland. Most of Ireland seceded from the UK in 1922, leaving the present formulation of the United Kingdom of Great Britain and Northern Ireland, which formally adopted the name in 1927 to reflect the change.
+				<p>The nearby Isle of Man, Guernsey and Bailiwick of Jersey are not part of the UK, being Crown Dependencies with the British Government responsible for defence and international representation. There are also 14 British Overseas Territories, the last remnants of the British Empire which, at its height in the 1920s, encompassed almost a quarter of the world's landmass and was the largest empire in history. British influence can be observed in the language, culture and the legal and political systems of many of its former colonies.
+				<p>The United Kingdom has the world's fifth-largest economy by nominal gross domestic product (GDP), and the tenth-largest by purchasing power parity (PPP). It has a high-income economy and a very high human development index rating, ranking 13th in the world. The UK became the world's first industrialised country and was the world's foremost power during the 19th and early 20th centuries. Today the UK remains one of the world's great powers, with considerable economic, cultural, military, scientific, technological and political influence internationally. It is a recognised nuclear weapon state and is ranked sixth globally in military expenditure.[36] It has been a permanent member of the United Nations Security Council since its first session in 1946.
+				<p>The United Kingdom is a member of the Commonwealth of Nations, the Council of Europe, the G7, the G20, NATO, the Organisation for Economic Co-operation and Development (OECD), Interpol and the World Trade Organization (WTO). It was a member of the European Union (EU) and its predecessor, the European Economic Community (EEC), from 1973 until withdrawing in 2020.			
+			</dd>
+			</li>
+		</dl>
+		</ol>
+		
+		<div id="myModal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="img01">
+		  <div id="caption"></div>
+		</div>
+		
+		<hr style="height:1px; width:120%;  color:	#ca0c7e; background-color:	#ca0c7e">
+		</br>
+		
+		<script>
+		// create references to the modal...
+		var modal = document.getElementById('myModal');
+		// to all images -- note I'm using a class!
+		var images = document.getElementsByClassName('myImages');
+		// the image in the modal
+		var modalImg = document.getElementById("img01");
+		// and the caption in the modal
+		var captionText = document.getElementById("caption");
+
+		// Go through all of the images with our custom class
+		for (var i = 0; i < images.length; i++) {
+		  var img = images[i];
+		  // and attach our click listener for this image.
+		  img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		  }
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		</script>
+</body>
+</html>			

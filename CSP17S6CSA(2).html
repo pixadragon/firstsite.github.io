@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My First Website - Favorite Movies</title>
+	
+	<style>
+		
+		.topnav {
+		  overflow: hidden;
+		  background-color: #613361;
+		  width: 120%;
+		}
+		
+		.topnav a {
+		  float: left;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 30px;
+		  text-decoration: none;
+		  font-size: 17px;
+		}
+		
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		
+		.topnav a.active {
+		  background-color: #8B008B;
+		  color: white;
+		}
+
+		#myImg {
+		  border-radius: 5px;
+		  cursor: pointer;
+		  transition: 0.3s;
+		}
+
+		#myImg:hover {
+		  opacity: 0.7;
+		}
+
+		.modal {
+		  display: none;
+		  /* Hidden by default */
+		  position: fixed;
+		  /* Stay in place */
+		  z-index: 1;
+		  /* Sit on top */
+		  padding-top: 100px;
+		  /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%;
+		  /* Full width */
+		  height: 100%;
+		  /* Full height */
+		  overflow: auto;
+		  /* Enable scroll if needed */
+		  background-color: rgb(0, 0, 0);
+		  /* Fallback color */
+		  background-color: rgba(0, 0, 0, 0.9);
+		  /* Black w/ opacity */
+		}
+
+		.modal-content {
+		  margin: auto;
+		  display: block;
+		  width: 40%;
+		  max-width: 600px;
+		}
+
+		#caption {
+		  margin: auto;
+		  display: block;
+		  width: 80%;
+		  max-width: 700px;
+		  text-align: center;
+		  color: #ccc;
+		  padding: 10px 0;
+		  height: 150px;
+		  font-size: 30px;
+		}
+
+		.modal-content,
+		#caption {
+		  animation-name: zoom;
+		  animation-duration: 0.6s;
+		}
+
+		@keyframes zoom {
+		  from {
+			transform: scale(0)
+		  }
+		  to {
+			transform: scale(1)
+		  }
+		}
+
+		.close {
+		  position: absolute;
+		  top: 15px;
+		  right: 35px;
+		  color: #f1f1f1;
+		  font-size: 40px;
+		  font-weight: bold;
+		  transition: 0.3s;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #bbb;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		@media only screen and (max-width: 700px) {
+		  .modal-content {
+			width: 100%;
+		  }
+		}		
+			
+	</style>
+	
+</head>
+<body style = "background-color:#EE82EE; width:120%; margin: 0;"  VLINK= "	#8B008B" ALINK="#9400D3 " >
+
+	<div class="topnav">
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA.html">Home</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(1).html">Favorite Games</a>
+	  <a class="active" href="#favorite movies">Favorite Movies</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(3).html">Favorite TV Shows</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(4).html">Favorite Books</a>
+	  <a href="file:///C:/Users/Cristine/Desktop/S6/theory/Web%20Technologies%20CS368/tutorial%20and%20assignment/website%201/CSP17S6CSA(5).html">Favorite Countries to Visit</a>
+	</div>
+	
+	<i><h1 style="text-align:center; color:	#8B008B; font-family:garamond; font-size:70px;">Favorite Movies</h1></i>
+	<hr style="height:1px; width:120%;   color:	#8B008B; background-color:	#8B008B;">
+	<br>
+	<b><blockquote><ol style="font-family:garamond; font-size:20px; color:#c2bb88;">
+		<dl>
+			<li style="color:#4f1f76;"><dt><img img class="myImages" id="myImg" alt="Theatrical release poster" style='border: 4px solid #4f1f76' src="https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg" width="220" height="326"></dt>
+			<dd><p>Avengers: Endgame is a 2019 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and distributed by Walt Disney Studios Motion Pictures, it is the direct sequel to Avengers: Infinity War (2018) and the 22nd film in the Marvel Cinematic Universe (MCU). Directed by Anthony and Joe Russo and written by Christopher Markus and Stephen McFeely, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Don Cheadle, Paul Rudd, Brie Larson, Karen Gillan, Danai Gurira, Benedict Wong, Jon Favreau, Bradley Cooper, Gwyneth Paltrow, and Josh Brolin. In the film, the surviving members of the Avengers and their allies attempt to reverse the damage caused by Thanos in Infinity War.
+				<p>The film was announced in October 2014 as Avengers: Infinity War – Part 2, but Marvel later removed this title. The Russo brothers joined as directors in April 2015, with Markus and McFeely signing on to write the script a month later. The film serves as a conclusion to the story of the MCU up to that point, ending the story arcs for several main characters. The plot revisits several moments from earlier films, bringing back actors and settings from throughout the franchise, as well as music from previous films. Filming began in August 2017 at Pinewood Atlanta Studios in Fayette County, Georgia, shooting back-to-back with Infinity War, and ended in January 2018. Additional filming took place in the Metro and Downtown Atlanta areas, New York state, Scotland, and England. The official title was revealed in December 2018. With an estimated budget of $356–400 million, the film is one of the most expensive films ever made.
+				<p>Avengers: Endgame premiered in Los Angeles on April 22, 2019, and was released in the United States on April 26, as part of Phase Three of the MCU. The film received praise for its direction, acting, musical score, action sequences, visual effects, and emotional weight, with critics lauding its culmination of the 22-film story. The film grossed $2.798 billion worldwide, surpassing Infinity War's entire theatrical run in just eleven days and breaking numerous box office records, including becoming the highest-grossing film of all time, which it held from July 2019 until March 2021. The film received numerous awards and nominations, including a nomination for Best Visual Effects at the 92nd Academy Awards, three nominations at the 25th Critics' Choice Awards (winning two), and a nomination for Special Visual Effects at the 73rd British Academy Film Awards.</br>
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c">
+				</iframe>		
+			</dd>
+			</li><br>
+			
+			<li style="color:#245560;"><dt><img img class="myImages" id="myImg" alt="Theatrical release poster" style='border: 4px solid #245560' src="https://upload.wikimedia.org/wikipedia/en/6/63/Godzilla_vs._Kong.png" width="220" height="326"></dt>
+			<dd><p>Godzilla vs. Kong is a 2021 American monster film directed by Adam Wingard. A sequel to Godzilla: King of the Monsters (2019) and Kong: Skull Island (2017), it is the fourth film in Legendary's MonsterVerse. It is also the 36th film in the Godzilla franchise, the 12th film in the King Kong franchise, and the fourth Godzilla film to be completely produced by a Hollywood studio. The film stars Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry, Shun Oguri, Eiza González, Julian Dennison, Lance Reddick, Kyle Chandler, and Demián Bichir. In the film, Kong clashes with Godzilla as humans lure the ape into the Hollow Earth to retrieve a power source for a weapon to stop Godzilla's mysterious rampages.
+				<p>The project was announced in October 2015 when Legendary announced plans for a shared cinematic universe between Godzilla and King Kong. The film's writers room was assembled in March 2017, and Wingard was announced as the director in May 2017. Principal photography began in November 2018 in Hawaii, Australia and Hong Kong, and wrapped in April 2019. After being delayed from a November 2020 release date due to the COVID-19 pandemic, Godzilla vs. Kong was theatrically released internationally on March 24, 2021, and in the United States on March 31, where it was released in theaters and on HBO Max simultaneously.
+				<p>The film received generally positive reviews from critics, with praise for the visual effects and action sequences, but criticism towards the script and human characters. It broke several pandemic box office records, and has grossed $406.6 million worldwide against a break-even point of $330 million, making it the third highest-grossing film of 2021. The film was also a streaming hit, becoming the most successful launch item in HBO Max's history.</br>
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/odM92ap8_c0">
+				</iframe>			
+			</dd>
+			</li><br>
+			
+			<li style="color:#353821;"><dt><img img class="myImages" id="myImg" alt="Promotional Poster" style='border: 4px solid #353821' src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Drishyam_2.jpg/330px-Drishyam_2.jpg" width="300" height="168"></dt>
+			<dd><p>Drishyam 2: The Resumption, or simply Drishyam 2, is a 2021 Indian Malayalam-language crime drama film written and directed by Jeethu Joseph and produced by Antony Perumbavoor through the company Aashirvad Cinemas. A sequel to their 2013 film Drishyam, the film stars Mohanlal, Meena, Ansiba Hassan and Esther Anil, reprising their roles from the original. The story takes place six years after the events of Drishyam</p>
+				<P>Principal photography lasted 46 days from September to November 2020, while adhering to safety precautions set for preventing the spread of COVID-19. The film was shot extensively in and around Thodupuzha in the same locations as Drishyam, and some scenes in Kochi. Anil Johnson composed the songs and score, while Satheesh Kurup handled the cinematography.
+				<p>Originally, the makers planned for a theatrical release, the producers later opted to release the film through the streaming service Amazon Prime Video. The film was released worldwide on 19 February 2021 to widespread critical acclaim, praising the narration style and performances, especially Mohanlal's. A sequel to the film was confirmed by the makers. The film is currently being remade in Telugu as Drushyam 2 with Jeethu Joseph directing the film. It is a sequel to the Telugu film Drushyam (2014) which is a remake of Drishyam (2013).
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/0f-nd1uGsjQ">
+				</iframe>
+			</dd>
+			</li><br>
+			
+			<li style="color:#15334b;"><dt><img img class="myImages" id="myImg" alt="Theatrical release poster" style='border: 4px solid #15334b' src="https://upload.wikimedia.org/wikipedia/en/2/21/Kimetsu_no_Yaiba_Mugen_Ressha_Hen_Poster.jpg" width="220" height="326"></dt>
+			<dd><p>Demon Slayer: Kimetsu no Yaiba the Movie: Mugen Train (Japanese: 劇場版「鬼滅の刃」 無限列車編, Hepburn: Gekijō-ban "Kimetsu no Yaiba" Mugen Ressha-hen), also known as Demon Slayer: Mugen Train or Demon Slayer: Infinity Train, is a 2020 Japanese animated dark fantasy period action film based on the shōnen manga series Demon Slayer: Kimetsu no Yaiba by Koyoharu Gotouge. The film, which is a direct sequel to the first season of the television series, was directed by Haruo Sotozaki and produced by Ufotable.
+				<p>The film was released on 16 October 2020 in Japan, and received acclaim from audiences and critics worldwide, with praise for character developments, action sequences, emotional depth, and faithfulness to the series. It has grossed over US$456 million worldwide, becoming the highest-grossing film of 2020 as well as making it the first Japanese film and first anime film to reach the milestone of US$400 million worldwide box office proceeds. It also set multiple box office records, including the highest-grossing film of all time in Japan, the highest-grossing R-rated animated film of all time, the highest-grossing anime film and Japanese film of all time.
+				<p>Due to its success, it was submitted in the Best Animated Feature Film category for the 93rd Academy Awards, and a second season of the anime series, titled Kimetsu no Yaiba – Yūkaku-hen, was announced and is set to premiere in 2021, with the staff and voice cast from the first season and film returning.<br>
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/bFwdl2PDAFM">
+				</iframe>
+			</dd>
+			</li><br>
+			
+			<li style="color:#1d5691;"><dt><img img class="myImages" id="myImg" alt="Japanese Theatrical release poster" style='border: 4px solid #1d5691' src="https://upload.wikimedia.org/wikipedia/en/6/66/Weathering_with_You_Poster.jpg" width="220" height="326"></dt>
+			<dd><p>Weathering with You (Japanese: 天気の子, Hepburn: Tenki no Ko, lit. "Child of Weather") is a 2019 Japanese animated romantic fantasy film produced by CoMix Wave Films and released by Toho. It depicts a high school boy who runs away from his rural home to Tokyo and befriends an orphan girl who has the ability to manipulate the weather.
+				<p>The film was commissioned in 2018, written and directed by Makoto Shinkai. It features the voices of Kotaro Daigo and Nana Mori, with animation direction by Atsushi Tamura, character design by Masayoshi Tanaka, and its orchestral score and soundtrack composed by Radwimps; the latter two previously collaborated with Shinkai on Your Name (2016). A light novel of the same name, also written by Shinkai, was published a day prior the film's premiere, while a manga adaptation was serialized in Afternoon on July 25, 2019.
+				<p>Weathering with You was theatrically released in conventional, IMAX, and 4DX theaters in Japan on July 19, 2019, and was released in the United States on January 20, 2020. It received positive reviews, with praise for the animation, narrative, music, and emotional weight, although some reviewers were divided over perceived similarities to Your Name. The film grossed over ¥35.11 billion (US$322.08 million) worldwide.
+				<p>The film won a number of awards, including being selected as the Japanese entry for Best International Feature Film at the 92nd Academy Awards. It received four Annie Award nominations, including for Best Independent Animated Feature, tying Spirited Away and Millennium Actress (both 2001) for the most nominations for an anime film at the Annies.
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/Q6iK6DjV_iE">
+				</iframe>
+			</dd>
+			</li>
+		</dl>
+		</ol>
+		
+		<div id="myModal" class="modal">
+		  <span class="close">&times;</span>
+		  <img class="modal-content" id="img01">
+		  <div id="caption"></div>
+		</div>
+				
+		<hr style="height:1px; width:120%;  color:	#8B008B; background-color:	#8B008B;">
+		</br>
+		
+		<script>
+		// create references to the modal...
+		var modal = document.getElementById('myModal');
+		// to all images -- note I'm using a class!
+		var images = document.getElementsByClassName('myImages');
+		// the image in the modal
+		var modalImg = document.getElementById("img01");
+		// and the caption in the modal
+		var captionText = document.getElementById("caption");
+
+		// Go through all of the images with our custom class
+		for (var i = 0; i < images.length; i++) {
+		  var img = images[i];
+		  // and attach our click listener for this image.
+		  img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+		  }
+		}
+
+		var span = document.getElementsByClassName("close")[0];
+
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+		</script>		
+				
+</body>
+</html>		
